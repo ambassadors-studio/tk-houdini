@@ -25,9 +25,9 @@ QMenu {
 }
 
 QGroupBox {
-    border: 2px solid rgb(40,40,40);
-    border-radius: 0px;
-    margin: 0em;
+    border:1px solid #5b5b5b;
+    border-radius: 4px;
+    padding: 17px
 }
 
 QGroupBox::title {
@@ -36,11 +36,24 @@ QGroupBox::title {
     border-radius: 0em;
     margin-left: 0em;
     padding: 0px 0px 0px 0px;
-    background-color: rgb(30,30,30);
+    margin-bottom: 2px;
+    color: rgb(200,200,200);
 }
 
-QGroupBox::title {
-    color: rgb(200,200,200);
+QGroupBox::indicator {
+    background: rgb(120, 120, 120);
+    border-radius: 4px;
+    width: 9px;
+    height: 9px;
+    padding: 3px;
+}
+
+QGroupBox::indicator:checked {
+    image: url({{ENGINE_ROOT_PATH}}/resources/check_grey.svg);
+}
+
+QGroupBox::indicator:unchecked {
+    image: none;
 }
 
 QFrame, QLineEdit, QComboBox, QSpinBox {
