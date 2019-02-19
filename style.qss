@@ -27,7 +27,8 @@ QMenu {
 QGroupBox {
     border:1px solid #5b5b5b;
     border-radius: 4px;
-    padding: 17px
+    padding: 17px;
+    margin: 0em;
 }
 
 QGroupBox::title {
